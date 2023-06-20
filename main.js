@@ -21,7 +21,7 @@ fetch(webhookurl, {
     if (response.ok) {
       console.log('sent');
     } else {
-      console.error('fail');
+      console.error('failed');
     }
   })
   .catch(error => {
