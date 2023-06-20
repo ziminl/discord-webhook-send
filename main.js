@@ -6,7 +6,7 @@
 
 const webhookurl = 'webhookurl';
 const payload = {
-  content: 'Hello, Discord Webhook!',
+  content: 'text',
   username: 'username',
   avatar_url: 'https://en.wikipedia.org/wiki/File:Test-Logo.svg'
 };
