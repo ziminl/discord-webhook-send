@@ -4,19 +4,16 @@
 import requests
 import json
 webhookurl = 'webhookurl'
-payload = {
+data = {
   'content': 'text',
   'username': 'username',
-  'avatar_url': 'https://en.wikipedia.org/wiki/File:Test-Logo.svg'
+  "avatar_url": "https://i.imgur.com/oBPXx0D.png"
 }
 
 # Send the webhook message
-response = requests.post(webhookurl, json=payload)
+response = requests.post(webhookurl, json=data)
 
 if response.status_code == 204:
-    print('sent')
+    print('Sent')
 else:
-    print('error:', response.status_code)
-
-
-
+    print('Error:', response.status_code)
